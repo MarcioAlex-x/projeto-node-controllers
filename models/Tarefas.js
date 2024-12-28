@@ -9,6 +9,7 @@ module.exports = db.define('tarefas',{
         type: DataTypes.TEXT
     },
     status:{
-        type: DataTypes.ENUM('pendente','andamento','concluido')
+        type: DataTypes.ENUM('pendente','andamento','concluido'),
+        defaultValue: 'pendente'
     }
 })
